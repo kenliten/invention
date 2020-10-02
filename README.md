@@ -1,2 +1,3 @@
-# invention-controller
-JavaScript keyboard/joystick interface for web games
+# invention
+
+The next generation game engine (Not functional yet)
