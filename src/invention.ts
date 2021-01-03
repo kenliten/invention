@@ -1,42 +1,7 @@
-interface Component {
-    // the name to identify and execute with
-    name: string;
-    /* number of order of preference to be execute inside the flow
-    the higher value, minor preference have to be executed
-    all components will be executed from lower to higher precedence value */
-    precedence: number;
-    // grants access to certain objects/methods/properties in the main class
-    access: string[];
-    // function to be execute in the main flow
-    member: Function;
-}
-
-interface Debug{
-    // true-> debugging = on, false-> debugging = off
-    status: boolean;
-    // method used to debug, defaults to console.log() in the class constructor
-    method: Function;
-}
-
-interface Flow{
-    // A function to add new elements to the flow
-    add: Function;
-    commute: Function;
-    error: Function;
-    next: Function;
-    queue: {
-        current: number;
-        total: number;
-    };
-    secuence: Secuence[];
-    sort: Function;
-    start: Function;
-}
-
-interface Secuence{
-    name: string;
-    precedence: number;
-}
+import { Component } from './lib/interfaces/component';
+import { Debug } from './lib/interfaces/debug';
+import { Flow } from './lib/interfaces/flow';
+import { Secuence } from './lib/interfaces/secuence';
 
 class Invention{
     id: string;
@@ -132,7 +97,7 @@ class Invention{
         return id;
     }
 }
-    
+
 if(typeof(module) !== "undefined"){
     module.exports = Invention;
 }

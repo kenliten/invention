@@ -4,7 +4,7 @@
   "description": "JavaScript keyboard/joystick interface for web games",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:dice": "jasmine ./dist/dice.spec.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/kenliten/invention#readme",
   "dependencies": {
-    "@types/node": "^14.11.2",
-    "karma": "^5.2.3"
+    "@types/jasmine": "^3.6.2",
+    "@types/node": "^14.11.2"
   }
 }
