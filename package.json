@@ -4,6 +4,7 @@
   "description": "JavaScript keyboard/joystick interface for web games",
   "main": "index.js",
   "scripts": {
+    "build": "tsc --build tsconfig.json",
     "test:dice": "jasmine ./dist/dice.spec.js"
   },
   "repository": {
@@ -11,14 +12,15 @@
     "url": "git+https://github.com/kenliten/invention.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "kenliten",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/kenliten/invention/issues"
   },
   "homepage": "https://github.com/kenliten/invention#readme",
   "dependencies": {
     "@types/jasmine": "^3.6.2",
-    "@types/node": "^14.11.2"
+    "@types/node": "^14.11.2",
+    "typescript": "^4.1.3"
   }
 }
